@@ -7,5 +7,8 @@ import { LOG} from './app3.js'
 import {APPLE} from './app2.js'
 
 
+function test(...rest) {
+    LOG(arguments[0])
+  }
 
-LOG('6')
+  test.call(this,'666'); 
