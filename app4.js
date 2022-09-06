@@ -2,7 +2,7 @@ let lll = 'let';
 var vvv = 'var';
 const CCC = 'CCC';
 
-(function test() {
+(function() {
   nnn = arguments[0];
   console.log(nnn);
 })('none!!!!');

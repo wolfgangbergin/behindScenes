@@ -6,9 +6,7 @@ import { LOG} from './app3.js'
 
 import {APPLE} from './app2.js'
 
+let test = ((...rest)=>LOG(rest[0])).call(this, '666')
 
-function test(...rest) {
-    LOG(arguments[0])
-  }
 
-  test.call(this,'666'); 
+ 
