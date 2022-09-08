@@ -1,12 +1,15 @@
 
-LOG(`${APPLE} 5 `)
-import { LOG} from './app3.js'
+//"use strict"
 
 
 
-import {APPLE} from './app2.js'
+var wolf  = {name: 'wwwwolf'}
+var wolf  = {name: 'wolf'}
 
-let test = ((...rest)=>LOG(rest[0])).call(this, '666')
+for(const value in wolf){
+    dir(wolf[value])
+}
 
 
- 
+// log(typeof Window)
+ dir( globalThis)

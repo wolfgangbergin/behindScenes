@@ -1,14 +1,12 @@
 
-LOG(`3`)
+log(`3`);
 
 
 
+APPLE = 'apple313';
 
- import { LOG} from './app3.js'
-  APPLE = 'apple'
- 
- export var APPLE 
+export var APPLE;
 
+log(APPLE);
 
-
-LOG('4')
+log('4');

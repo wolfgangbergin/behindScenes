@@ -1,8 +1,9 @@
 
-export const LOG = console.log
-LOG(globalThis)
-LOG(window)
-console.log(this)
+log('1')
+export const BANNAN = 'bannan'
 
 
-LOG('2')
+
+
+
+log('2')
