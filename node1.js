@@ -1,21 +1,27 @@
-// let lll = 'let';
-// var vvv = 'var';
-// const CCC = 'const';
-// (function () {
-// //     console.log(`1`);
-// //     console.log(this);
-// //     console.log(`2`);
-// //     console.log(global);
-// //     console.log(`3`);
-// //   console.log( globalThis);
-//   console.log(CCC, globalThis.CCC);
-//   console.log(vvv, globalThis.vvv);
-//   console.log(lll, globalThis.lll);
-//   nnn = arguments[0]
-//   console.log(nnn , globalThis.nnn);
-// }.call(this, 'none!!!!'));
+globalThis.__proto__.log = console.log;
+let userLeft = 0;
+let userWatchingCatMeme = 0;
 
-
-
-
-
+function testFunc(successFunc, errFunc) {
+  switch (true) {
+    case !!userLeft:
+      errFunc({ message: 'userLeft!', name: 'Apple sucks!' });
+      break;
+    case !!userWatchingCatMeme:
+      errFunc({ message: 'userWatchingCatMeme!', name: 'Apple sucks!' });
+      break;
+    case !!userLeft === false && !!userWatchingCatMeme === false:
+      successFunc({ message: 'Great job', name: 'two thumbs up' });
+      break;
+    default:
+      log('default');
+      break;
+  }
+}
+let a = (obj) => {
+  log(`${obj.message} ${obj.name}`);
+};
+let b = (err) => {
+  log(`${err.message} ${err.name}`);
+};
+testFunc(a, b);
