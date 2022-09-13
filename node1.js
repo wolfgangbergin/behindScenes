@@ -1,27 +1,48 @@
 globalThis.__proto__.log = console.log;
 let userLeft = 0;
-let userWatchingCatMeme = 0;
+let userWatchingCatMeme = 1;
 
-function testFunc(successFunc, errFunc) {
-  switch (true) {
-    case !!userLeft:
-      errFunc({ message: 'userLeft!', name: 'Apple sucks!' });
-      break;
-    case !!userWatchingCatMeme:
-      errFunc({ message: 'userWatchingCatMeme!', name: 'Apple sucks!' });
-      break;
-    case !!userLeft === false && !!userWatchingCatMeme === false:
-      successFunc({ message: 'Great job', name: 'two thumbs up' });
-      break;
-    default:
-      log('default');
-      break;
-  }
+function testPromise() {
+  return new Promise((successFunc, errFunc) => {
+    switch (true) {
+      case !!userLeft:
+        errFunc({ message: 'userLeft!', name: 'Apple sucks!', count: 0 });
+        break;
+      case !!userWatchingCatMeme:
+      
+        errFunc({
+          message: 'userWatchingCatMeme!',
+          name: 'Apple sucks!',
+          count: 0,
+        });
+        break;
+      case !!userLeft === false && !!userWatchingCatMeme === false:
+        successFunc({ message: 'Great job', name: 'thumbs up', count: 0 });
+        break;
+      default:
+        log('default');
+        break;
+    }
+  });
 }
-let a = (obj) => {
-  log(`${obj.message} ${obj.name}`);
-};
-let b = (err) => {
-  log(`${err.message} ${err.name}`);
-};
-testFunc(a, b);
+
+testPromise()
+  .then((obj) => {
+    obj.count += 1;
+    return obj;
+  })
+  .then((obj) => {
+    obj.count += 1;
+    return obj;
+  })
+  .then((obj) => {
+    obj.count += 1;
+    return obj;
+  })
+  .then((obj) => {
+    log(`${obj.message}  ${obj.count} ${obj.name} `);
+  })
+  .catch((err) => {
+   
+    log(`${err.message} ${err.name}`);
+  });
