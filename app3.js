@@ -1,9 +1,15 @@
+let kim = 0;
 
-log('1')
-export const BANNAN = 'bannan'
+let  mich3 = (param4) => {
+  if (param4) {
+    param4();
+  }
+  kim += 1;
+}
 
+mich3(() =>
+  mich3(() => mich3(() => mich3(() => mich3(() => mich3(() => mich3)))))
+);
 
-
-
-
-log('2')
+log(`kimTest: ${kim}`);
+export let app3 = () => {};
