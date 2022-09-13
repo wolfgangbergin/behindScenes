@@ -20,4 +20,5 @@ export let app3 = () => {};
 let testWolf = () =>{
     return 'kim22'
 }
+
 log(testWolf.toString())
