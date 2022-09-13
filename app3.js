@@ -1,11 +1,11 @@
 let kim = 0;
 
-let  mich3 = (param4) => {
+let mich3 = (param4) => {
   if (param4) {
     param4();
   }
   kim += 1;
-}
+};
 
 mich3(() =>
   mich3(() => mich3(() => mich3(() => mich3(() => mich3(() => mich3)))))
