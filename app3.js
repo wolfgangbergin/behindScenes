@@ -1,15 +1,18 @@
 let kim = 0;
 
-let mich3 = (param4) => {
-  if (param4) {
+const M3 = (param4 = M3) => {
+    kim += 1;
+  if (kim < 50){
     param4();
   }
-  kim += 1;
+   
+ 
+ 
 };
 
-mich3(() =>
-  mich3(() => mich3(() => mich3(() => mich3(() => mich3(() => mich3)))))
+M3(() =>
+  M3(() => M3(() => M3(() => M3(() => M3(() => M3())))))
 );
 
-log(`kimTest: ${kim}`);
+log(`app3: ${kim}`);
 export let app3 = () => {};
