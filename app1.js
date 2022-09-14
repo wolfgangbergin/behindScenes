@@ -1,5 +1,6 @@
 import {B} from './app2.js'
 let buttonKim22 = document.getElementById('kim22');
+
 let i;
 const keyBoard = document.querySelector('.keyboard');
 

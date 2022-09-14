@@ -1,24 +1,18 @@
-let kim = 0 || 1;
+import {app4} from './app4.js'
+let kim = 12;
 
 const M3 = (param4 = M3) => {
-    kim += 1;
-  if (kim < 50){
+  kim += 1;
+
+  if (kim < 20) {
     param4();
   }
-   
- 
- 
+
+  return kim;
 };
 
-M3(() =>
-  M3(() => M3(() => M3(() => M3(() => M3(() => M3())))))
-);
+// log(M3(() => M3(() => M3(() => M3(() => M3(() => M3(() => M3())))))));
 
-log(`app3: ${kim}`);
+
+
 export let app3 = () => {};
-
-let testWolf = () =>{
-    return 'kim22'
-}
-
-log(testWolf.toString())

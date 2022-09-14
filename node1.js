@@ -9,7 +9,6 @@ function testPromise() {
         errFunc({ message: 'userLeft!', name: 'Apple sucks!', count: 0 });
         break;
       case !!userWatchingCatMeme:
-      
         errFunc({
           message: 'userWatchingCatMeme!',
           name: 'Apple sucks!',
@@ -43,6 +42,5 @@ testPromise()
     log(`${obj.message}  ${obj.count} ${obj.name} `);
   })
   .catch((err) => {
-   
     log(`${err.message} ${err.name}`);
   });
