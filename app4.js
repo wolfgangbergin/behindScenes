@@ -26,6 +26,5 @@ function first(callbackS, massage) {
     1000
   );
 
-log(first.toString())
 
 export let app4 = ()=>{}
