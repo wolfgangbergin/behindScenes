@@ -25,7 +25,7 @@ function first(callbackS, massage) {
       first(() => second(() => third('CCC', () => Fourth('DDDD', ()=>fifth('EEEEE'))), 'BB'), 'A'),
     1000
   );
-  
+
 
 
 export let app4 = ()=>{}
