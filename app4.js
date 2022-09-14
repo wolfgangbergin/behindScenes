@@ -1,30 +1,37 @@
+let wolfTimeout = (func, time = 500) => {
+  setTimeout(func, time);
+};
 function first(callbackS, massage) {
-    log(massage);
-    setTimeout(callbackS, 1000);
-  }
-  function second(callbackT, massage) {
-    log(massage);
-    setTimeout(callbackT, 1000);
-  }
-  
-  let third = (message, callbackF) => {
-    log(message);
-    setTimeout(callbackF, 1000);
-  };
-  
-  let Fourth = (message, fifth) => {
-      setTimeout(fifth , 1000);
-    log(message);
-  };
-  let fifth = (massage) => {
-    log(massage);
-  };
-  
-  setTimeout(
+  log(massage);
+  wolfTimeout(callbackS);
+}
+function second(callbackT, massage) {
+  log(massage);
+  wolfTimeout(callbackT);
+}
+
+let third = (callbackF, message) => {
+  log(message);
+  wolfTimeout(callbackF);
+};
+
+let Fourth = (callbackFi, message) => {
+  wolfTimeout(callbackFi, 2000);
+  log(message);
+};
+let fifth = (massage) => {
+  log(massage);
+};
+
+wolfTimeout(() =>
+  first(
     () =>
-      first(() => second(() => third('CCC', () => Fourth('DDDD', ()=>fifth('EEEEE'))), 'BB'), 'A'),
-    1000
-  );
+      second(
+        () => third(() => Fourth(() => fifth('EEEEE'), 'DDDD'), 'CCC'),
+        'BB'
+      ),
+    'A'
+  )
+);
 
-
-export let app4 = ()=>{}
+export let app4 = () => {};
