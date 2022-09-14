@@ -1,4 +1,4 @@
-import {app4} from './app4.js'
+import { app4 } from './app4.js';
 let kim = 12;
 
 const M3 = (param4 = M3) => {
@@ -13,8 +13,4 @@ const M3 = (param4 = M3) => {
 
 // log(M3(() => M3(() => M3(() => M3(() => M3(() => M3(() => M3())))))));
 
-
-
-
 export let app3 = () => {};
-
