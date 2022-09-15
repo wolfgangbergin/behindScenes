@@ -5,7 +5,7 @@ function M3(param1) {
   param1 && param1();
 
   kim += 1;
-  return;
+  return 'wolf' ;
 }
 
 M3(function () {
