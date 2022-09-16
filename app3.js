@@ -1,19 +1,23 @@
 import { app4 } from './app4.js';
-// let kim = 12;
-// let count = '5';
-// const M3 = ( param4 = M3, count,) => {
-//   kim += 1;
-//   count + 1;
+// const WOLFGANG = '1wolfgang'
+
+// let kim = WOLFGANG.length;
+// let count = 0
+
+// const M3 = (param = '',callback , ) => {
+//    log(callback)
+   
+//     count += 1;
+
  
-//   if (kim < 20) {
-//   param4();
- 
+//   if (count < WOLFGANG.length ) {
+//     return  callback( param + WOLFGANG[count] )
 //   }
   
 
-//   return  count += 1;
+  
 // };
 
-// console.log(M3( () => M3(() => M3(() => M3(() => M3(() => M3(() => M3())))), ), count));
-// log(kim)
+// console.log(M3(undefined,(aResults)=>M3(aResults, (bResults)=>M3(bResults,(cResults)=>M3(cResults,(dResults)=>M3(dResults, (F)=>F ))))));
+
 export let app3 = () => {};
