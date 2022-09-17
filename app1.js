@@ -33,6 +33,7 @@ async function testWolf() {
   log('5');
 }
 
+
 function newFunc() {
   testWolf();
 }
