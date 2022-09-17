@@ -1,23 +1,17 @@
 import { app4 } from './app4.js';
-// const WOLFGANG = '1wolfgang'
+const WOLFGANG = 'wolfgang bergin';
 
-// let kim = WOLFGANG.length;
-// let count = 0
+// let count = -1;
 
-// const M3 = (param = '',callback , ) => {
-//    log(callback)
-   
-//     count += 1;
+// const M3 = (param, callback) => {
+//   count += 1;
 
- 
-//   if (count < WOLFGANG.length ) {
-//     return  callback( param + WOLFGANG[count] )
+//   if (count < WOLFGANG.length) {
+//     return callback(param + WOLFGANG[count], callback);
 //   }
-  
 
-  
+//   return param;
 // };
 
-// console.log(M3(undefined,(aResults)=>M3(aResults, (bResults)=>M3(bResults,(cResults)=>M3(cResults,(dResults)=>M3(dResults, (F)=>F ))))));
-
+// console.log(M3('', M3));
 export let app3 = () => {};
