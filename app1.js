@@ -37,5 +37,6 @@ async function testWolf() {
 function newFunc() {
   testWolf();
 }
+wolfTest
 
 newFunc();
